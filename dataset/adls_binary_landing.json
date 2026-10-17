@@ -1,5 +1,5 @@
 {
-	"name": "adls_binary",
+	"name": "adls_binary_landing",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "adls",

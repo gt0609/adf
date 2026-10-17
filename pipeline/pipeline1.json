@@ -44,7 +44,7 @@
 				],
 				"outputs": [
 					{
-						"referenceName": "adls_binary",
+						"referenceName": "adls_binary_landing",
 						"type": "DatasetReference"
 					}
 				]
