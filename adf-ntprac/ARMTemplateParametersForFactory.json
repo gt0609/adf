@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adf-ntprac"
+		},
+		"AzureDatabricks1_accessToken": {
+			"value": ""
+		},
+		"FileServer1_password": {
+			"value": ""
+		},
+		"adls_accountKey": {
+			"value": ""
+		},
+		"AzureDatabricks1_properties_typeProperties_existingClusterId": {
+			"value": "1017-095436-le4hodqz"
+		},
+		"FileServer1_properties_typeProperties_host": {
+			"value": "C:\\Users\\ASUS\\Desktop\\Finarb Assignment\\DE_Assessment_2\\DE_Assessment_2\\data\\landing"
+		},
+		"FileServer1_properties_typeProperties_userId": {
+			"value": "laptop-dhoo8j71\\asus"
+		},
+		"adls_properties_typeProperties_url": {
+			"value": "https://santprac.dfs.core.windows.net/"
+		}
+	}
+}
