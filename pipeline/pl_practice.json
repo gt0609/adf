@@ -1,0 +1,75 @@
+{
+	"name": "pl_practice",
+	"properties": {
+		"activities": [
+			{
+				"name": "Set_RunStart",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "RunStart",
+					"value": {
+						"value": "@formatDateTime(utcNow(),'yyyy-MM-dd HH:mm:ss')",
+						"type": "Expression"
+					}
+				}
+			},
+			{
+				"name": "Set_TableList",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "TableList",
+					"value": {
+						"value": "@createArray('Customers','Orders')",
+						"type": "Expression"
+					}
+				}
+			},
+			{
+				"name": "Set_Counter",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "Counter",
+					"value": {
+						"value": "@string(length(variables('TableList')))",
+						"type": "Expression"
+					}
+				}
+			}
+		],
+		"parameters": {
+			"Env": {
+				"type": "string"
+			}
+		},
+		"variables": {
+			"RunStart": {
+				"type": "String"
+			},
+			"TableList": {
+				"type": "Array"
+			},
+			"Counter": {
+				"type": "String"
+			}
+		},
+		"annotations": []
+	}
+}
